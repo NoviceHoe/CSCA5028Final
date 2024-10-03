@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .result-box {
+            background-color: #e7f3fe;
+            padding: 20px;
+            border-left: 5px solid #2196F3;
+            margin-top: 20px;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #2196F3;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-button:hover {
+            background-color: #1976D2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculation Result</h1>
+        <p>Weight: <strong>{{ weight }}</strong> lbs</p>
+        <p>Maximum Daily Temperature: <strong>{{ max_temp }}</strong> °F</p>
+
+        <div class="result-box">
+            <p>Based on the maximum daily temperature in your area and your physical characteristics your daily water intake should be:</p>
+            <h2>{{ result }}oz</h2>
+        </div>
+
+        <a href="/" class="back-button">Go Back</a>
+    </div>
+</body>
+</html>
